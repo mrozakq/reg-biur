@@ -21,13 +21,13 @@ const variants = [
   },
   {
     id: 'v3',
-    name: 'Ciepły',
-    subtitle: 'terakota · ecru · oliwa · humanistic sans',
+    name: 'Wybrany — produkcja',
+    subtitle: 'granat + cyjan · logo z wizytówki · finalna wersja',
     description:
-      'Ludzki, ciepły wizerunek lokalnego biura. Ziemiste kolory, organiczne kształty, „biuro za rogiem, któremu można zaufać". Mocny akcent na osobę właścicielki i bliskość klienta.',
-    palette: ['#C75B39', '#F4EDE0', '#5E6B3C', '#3F2C1D'],
+      'Wariant wybrany przez klientkę. Dostosowany do firmowej wizytówki — paleta granat + cyjan, logo z bar-chart w ramce, NIP i REGON w stopce, dodatkowa usługa „Zatrudnienie cudzoziemców" jako specjalność biura.',
+    palette: ['#15265E', '#1E3A6E', '#29A5DD', '#FFFFFF'],
     fonts: 'Fraunces + DM Sans',
-    keywords: ['Ciepła paleta', 'Lokalny charakter', 'Ludzkie podejście'],
+    keywords: ['Wersja produkcyjna', 'Granat + cyjan', 'Logo z wizytówki'],
   },
 ]
 
@@ -82,7 +82,7 @@ export default function Page() {
                       ? 'linear-gradient(135deg, #FAF7F2 0%, #FAF7F2 100%)'
                       : v.id === 'v2'
                       ? 'linear-gradient(135deg, #0A0A0A 0%, #171717 100%)'
-                      : 'linear-gradient(135deg, #F4EDE0 0%, #EAD9C0 100%)',
+                      : 'linear-gradient(135deg, #15265E 0%, #1E3A6E 100%)',
                 }}
               >
                 <div className="absolute inset-5">
@@ -143,25 +143,33 @@ export default function Page() {
                   {v.id === 'v3' && (
                     <div className="h-full flex flex-col">
                       <div className="flex items-center justify-between">
-                        <div className="text-[8px] tracking-widest text-[#3F2C1D] font-semibold">REG·BIUR</div>
-                        <div className="w-3 h-3 rounded-full bg-[#C75B39]" />
+                        <div className="flex items-center gap-1.5">
+                          <svg viewBox="0 0 48 48" className="w-3.5 h-3.5">
+                            <rect x="3" y="3" width="42" height="42" rx="3" stroke="#FFFFFF" strokeWidth="3.5" fill="none" />
+                            <rect x="11" y="28" width="6" height="10" fill="#29A5DD" />
+                            <rect x="21" y="22" width="6" height="16" fill="#29A5DD" />
+                            <rect x="31" y="16" width="6" height="22" fill="#29A5DD" />
+                          </svg>
+                          <div className="text-[8px] tracking-widest text-white font-bold">REG-BIUR</div>
+                        </div>
+                        <div className="text-[7px] text-[#29A5DD] font-medium">od 2018</div>
                       </div>
                       <div className="mt-4 space-y-1.5">
-                        <div className="h-2.5 bg-[#3F2C1D] rounded-full w-4/5" />
-                        <div className="h-2.5 bg-[#C75B39] rounded-full w-3/5" />
+                        <div className="h-2.5 bg-white rounded-sm w-4/5" />
+                        <div className="h-2.5 bg-[#29A5DD] rounded-sm w-3/5" />
                       </div>
-                      <div className="mt-3 h-1 bg-[#3F2C1D]/40 rounded-full w-3/4" />
-                      <div className="mt-1 h-1 bg-[#3F2C1D]/40 rounded-full w-2/3" />
-                      <div className="mt-3 inline-block px-2.5 py-1 bg-[#5E6B3C] text-white text-[7px] font-semibold rounded-full w-fit">napisz do nas</div>
+                      <div className="mt-3 h-1 bg-white/40 rounded-full w-3/4" />
+                      <div className="mt-1 h-1 bg-white/40 rounded-full w-2/3" />
+                      <div className="mt-3 inline-block px-2.5 py-1 bg-[#29A5DD] text-white text-[7px] font-semibold rounded-full w-fit">zadzwoń →</div>
                       <div className="mt-auto grid grid-cols-3 gap-1.5">
-                        <div className="h-8 bg-white rounded-lg flex items-center justify-center">
-                          <div className="w-2 h-2 rounded-full bg-[#C75B39]" />
+                        <div className="h-8 bg-white/10 border border-white/20 rounded-lg flex items-center justify-center">
+                          <div className="w-2 h-2 rounded-full bg-[#29A5DD]" />
                         </div>
-                        <div className="h-8 bg-white rounded-lg flex items-center justify-center">
-                          <div className="w-2 h-2 rounded-full bg-[#5E6B3C]" />
+                        <div className="h-8 bg-white/10 border border-white/20 rounded-lg flex items-center justify-center">
+                          <div className="w-2 h-2 rounded-full bg-white" />
                         </div>
-                        <div className="h-8 bg-white rounded-lg flex items-center justify-center">
-                          <div className="w-2 h-2 rounded-full bg-[#3F2C1D]" />
+                        <div className="h-8 bg-white/10 border border-white/20 rounded-lg flex items-center justify-center">
+                          <div className="w-2 h-2 rounded-full bg-[#29A5DD]" />
                         </div>
                       </div>
                     </div>

@@ -5,8 +5,8 @@
 @tailwind utilities;
 
 html, body {
-  background: #FBF5EB;
-  color: #3F2C1D;
+  background: #FFFFFF;
+  color: #0F1A36;
   font-family: 'DM Sans', system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
@@ -18,6 +18,6 @@ html, body {
 
 .paper {
   background-image:
-    radial-gradient(circle at 25% 35%, rgba(199, 91, 57, 0.04) 0%, transparent 50%),
-    radial-gradient(circle at 75% 70%, rgba(94, 107, 60, 0.04) 0%, transparent 50%);
+    radial-gradient(circle at 25% 35%, rgba(41, 165, 221, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 75% 70%, rgba(30, 58, 110, 0.04) 0%, transparent 50%);
 }

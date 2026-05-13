@@ -1,8 +1,18 @@
 # brief.md — Reg-Biur
 
 slug: reg-biur
-warianty: 3
+warianty: 3 (klient wybrał v3, 2026-05-13)
 domena: reg-biur.com.pl
+
+## Dane firmy (z wizytówki)
+- Nazwa: Usługi Biurowo-Księgowe Reg-Biur Regina Kierznikiewicz
+- NIP: 588-11-45-668
+- REGON: 192604826
+- Adres: ul. Stefczyka 67, 84-200 Wejherowo
+- Telefon: +48 508 189 717
+- E-mail: ubk@reg-biur.com.pl
+- Logo (z wizytówki): bar-chart w kwadratowej ramce, granat + cyjan
+- Paleta wizytówki: granat #15265E / #1E3A6E + cyjan #29A5DD + biel
 
 ## Co to za strona?
 Typ: Wizytówka / landing biura rachunkowego
@@ -22,12 +32,13 @@ lub mailowo po zapoznaniu się z ofertą.
 - Osoby zakładające działalność — wsparcie od rejestracji
 
 ## Usługi (każdy wariant musi je zawierać)
-1. Pełna księgowość (księgi handlowe)
-2. KPiR / ryczałt
-3. Kadry i płace
+1. Prowadzenie księgowości (pełna księgowość, KPiR, ryczałt)
+2. Kadry i płace
+3. Rozliczenia podatkowe firm i indywidualne
 4. Obsługa ZUS, JPK, deklaracje VAT
 5. Doradztwo podatkowe
 6. Rejestracja działalności gospodarczej
+7. **Zatrudnienie cudzoziemców** (specjalność, dodano z wizytówki 2026-05-13)
 
 ## Sekcje strony (wszystkie 3 warianty)
 
@@ -91,11 +102,13 @@ lub mailowo po zapoznaniu się z ofertą.
 - Typografia: bold display sans (Space Grotesk), mono akcenty
 - Styl: SaaS-owy, energiczny, "nowa generacja księgowości"
 
-### v3 — ciepły / organiczny
-- Charakter: ludzki, ciepły, lokalna firma
-- Paleta: terakota (#C75B39) + ecru (#F4EDE0) + oliwa (#5E6B3C)
+### v3 — WYBRANY (wersja produkcyjna, zaktualizowana 2026-05-13)
+- Charakter: profesjonalny + ludzki, lokalna firma
+- Paleta: granat #15265E / #1E3A6E (frame) + cyjan #29A5DD (akcent) + biel (zgodnie z wizytówką klientki)
 - Typografia: humanistic sans (DM Sans), warm serif na nagłówkach (Fraunces)
-- Styl: rzemieślniczy, bliski klientowi, "biuro za rogiem któremu można zaufać"
+- Logo: bar-chart SVG (3 słupki rosnące, ramka kwadratowa) — odwzorowanie z wizytówki
+- Specjalność wyeksponowana: zatrudnianie cudzoziemców (dedykowana sekcja z gradientem)
+- W stopce: NIP 588-11-45-668, REGON 192604826
 
 ## SEO
 - Każdy wariant: indeksowalny, robots allow, sitemap.xml, metadata
