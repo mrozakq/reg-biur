@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://reg-biur.com.pl/v2/sitemap.xml
