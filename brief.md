@@ -31,14 +31,17 @@ lub mailowo po zapoznaniu się z ofertą.
 - Małe i średnie firmy (sp. z o.o., s.c.)
 - Osoby zakładające działalność — wsparcie od rejestracji
 
-## Usługi (każdy wariant musi je zawierać)
-1. Prowadzenie księgowości (pełna księgowość, KPiR, ryczałt)
+## Usługi (zaktualizowane 2026-05-13 — klientka NIE prowadzi pełnych ksiąg dla spółek z o.o. ani doradztwa podatkowego)
+1. Prowadzenie księgowości — **tylko KPiR i ryczałt** (małe foremki, JDG i firmy rodzinne)
 2. Kadry i płace
-3. Rozliczenia podatkowe firm i indywidualne
-4. Obsługa ZUS, JPK, deklaracje VAT
-5. Doradztwo podatkowe
-6. Rejestracja działalności gospodarczej
-7. **Zatrudnienie cudzoziemców** (specjalność, dodano z wizytówki 2026-05-13)
+3. Rozliczenia podatkowe firm i indywidualne (PIT, VAT, JPK, ZUS, e-deklaracje)
+4. Rejestracja działalności gospodarczej (CEIDG)
+5. **Zatrudnienie cudzoziemców** (specjalność)
+
+## Co NIE jest świadczone (NIE umieszczać na stronie)
+- Pełna księgowość / księgi handlowe dla sp. z o.o.
+- Doradztwo podatkowe (jako osobna kategoria) — klientka nie posiada uprawnień doradcy podatkowego
+- Rozliczanie spółek (sp. z o.o., spółki cywilne z pełną księgowością)
 
 ## Sekcje strony (wszystkie 3 warianty)
 

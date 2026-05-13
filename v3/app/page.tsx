@@ -10,12 +10,30 @@ function Logo({ frame = '#15265E', bars = '#29A5DD', className = '' }: { frame?:
 }
 
 const services = [
-  { icon: '📒', title: 'Prowadzenie księgowości', desc: 'Pełna księgowość (księgi handlowe) dla spółek z o.o. oraz KPiR i ryczałt dla mniejszych firm. Bilans, RZiS, sprawozdania, deklaracje CIT.' },
-  { icon: '👥', title: 'Kadry i płace', desc: 'Umowy o pracę, zlecenia, listy płac, ewidencja czasu pracy, świadectwa pracy, ZUS pracowników — wszystko zgodnie z aktualnymi przepisami.' },
-  { icon: '🧾', title: 'Rozliczenia podatkowe', desc: 'Rozliczenia podatkowe firm oraz osób indywidualnych. PIT, CIT, VAT, JPK_V7, deklaracje roczne i zaliczki w trakcie roku.' },
-  { icon: '📊', title: 'ZUS, JPK, VAT', desc: 'Deklaracje VAT, VAT-UE, JPK_V7, rozliczenia ZUS, e-deklaracje, przelewy podatkowe. Pilnujemy terminów za Ciebie.' },
-  { icon: '💡', title: 'Doradztwo podatkowe', desc: 'Wybór najlepszej formy opodatkowania, optymalizacja podatkowa, konsultacje przy istotnych decyzjach biznesowych.' },
-  { icon: '🌱', title: 'Rejestracja działalności', desc: 'Pomoc przy zakładaniu firmy — CEIDG, KRS, wybór formy prawnej, pierwsze faktury i deklaracje. Prowadzimy krok po kroku.' },
+  {
+    icon: '📒',
+    title: 'Prowadzenie księgowości',
+    desc: 'KPiR i ewidencja ryczałtowa dla jednoosobowych działalności i mniejszych firm. Codzienne księgowanie, ewidencje, rejestry VAT, kontrola dokumentów.',
+    bullets: ['Książka przychodów i rozchodów (KPiR)', 'Ryczałt od przychodów ewidencjonowanych', 'Rejestry VAT i kontrola dokumentów'],
+  },
+  {
+    icon: '👥',
+    title: 'Kadry i płace',
+    desc: 'Umowy o pracę, zlecenia, listy płac, ewidencja czasu pracy, świadectwa pracy, deklaracje ZUS pracowników — wszystko zgodnie z aktualnymi przepisami.',
+    bullets: ['Umowy o pracę, zlecenia, o dzieło', 'Listy płac i ewidencja czasu pracy', 'ZUS pracowników i pracodawcy'],
+  },
+  {
+    icon: '🧾',
+    title: 'Rozliczenia podatkowe',
+    desc: 'Rozliczenia podatkowe firm oraz osób indywidualnych. PIT, VAT, JPK_V7, deklaracje roczne, zaliczki w trakcie roku, e-deklaracje.',
+    bullets: ['PIT roczny i zaliczki miesięczne', 'VAT, VAT-UE, JPK_V7', 'Rozliczenia indywidualne i rodzinne'],
+  },
+  {
+    icon: '🌱',
+    title: 'Rejestracja działalności',
+    desc: 'Pomoc przy zakładaniu firmy — CEIDG, wybór formy opodatkowania, pierwsze deklaracje. Prowadzimy krok po kroku przez pierwsze miesiące.',
+    bullets: ['Rejestracja w CEIDG', 'Wybór formy opodatkowania', 'Ulga ZUS na start, pierwsze faktury'],
+  },
 ]
 
 const reasons = [
@@ -29,7 +47,7 @@ const reasons = [
 
 const audiences = [
   { label: 'Dla freelancera', title: 'Jednoosobowa działalność', desc: 'Prowadzimy ryczałt, KPiR, rozliczenia skalą lub liniowym. Pomagamy wybrać najkorzystniejszą formę dla Twojej branży.' },
-  { label: 'Dla małej firmy', title: 'Spółki z o.o. i s.c.', desc: 'Pełna księgowość, sprawozdania finansowe, kadry pracownicze, deklaracje CIT i VAT — bierzemy na siebie całą papierologię.' },
+  { label: 'Dla startującego', title: 'Pierwsza działalność', desc: 'Pomożemy zarejestrować firmę, wybrać formę opodatkowania, skorzystać z ulgi ZUS na start. Prowadzimy za rękę przez pierwsze miesiące.' },
   { label: 'Dla zatrudniających', title: 'Firmy z pracownikami zza granicy', desc: 'Specjalizujemy się w zatrudnianiu cudzoziemców — formalności, oświadczenia, zezwolenia, ZUS i podatki pracowników.' },
 ]
 
@@ -89,9 +107,9 @@ export default function Page() {
                 <span className="text-cyan-500 italic">prowadzona z troską</span>.
               </h1>
               <p className="text-ink-700 text-lg mt-7 leading-relaxed max-w-xl">
-                Lokalne biuro rachunkowe w Wejherowie. Od 2018 prowadzimy księgi
-                jednoosobowych działalności, małych spółek i firm rodzinnych —
-                z indywidualną uwagą dla każdej z nich.
+                Lokalne biuro rachunkowe w Wejherowie. Od 2018 prowadzimy KPiR,
+                ryczałt, kadry i rozliczenia podatkowe dla jednoosobowych
+                działalności i firm rodzinnych — z indywidualną uwagą dla każdego klienta.
               </p>
               <div className="mt-9 flex flex-wrap gap-3">
                 <a href="tel:+48508189717" className="inline-flex items-center gap-3 px-7 py-4 bg-cyan-500 hover:bg-cyan-600 text-white font-medium transition rounded-full shadow-lg shadow-cyan-500/25">
@@ -109,7 +127,7 @@ export default function Page() {
                 </div>
                 <div className="w-px h-14 bg-navy-200" />
                 <div>
-                  <div className="serif text-4xl text-navy-800 font-semibold">7</div>
+                  <div className="serif text-4xl text-navy-800 font-semibold">5</div>
                   <div className="text-xs text-ink-700 mt-1 max-w-[8rem]">obszarów usług</div>
                 </div>
                 <div className="w-px h-14 bg-navy-200" />
@@ -172,8 +190,8 @@ export default function Page() {
                 <p>
                   Usługi Biurowo-Księgowe <strong className="text-navy-900">Reg-Biur</strong> prowadzi
                   <strong className="text-navy-900"> Regina Kierznikiewicz</strong> — od stycznia 2018 roku.
-                  Specjalizujemy się w księgowości, kadrach i rozliczeniach podatkowych dla
-                  jednoosobowych działalności oraz małych i średnich firm z Wejherowa i okolic.
+                  Specjalizujemy się w KPiR, ryczałcie, kadrach i rozliczeniach podatkowych dla
+                  jednoosobowych działalności i firm rodzinnych z Wejherowa i okolic.
                 </p>
                 <p>
                   Pracujemy <strong className="text-navy-900">indywidualnie</strong>. Każdy klient ma bezpośredni
@@ -206,18 +224,24 @@ export default function Page() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div className="grid md:grid-cols-2 gap-5">
             {services.map((s, i) => (
-              <div key={s.title} className={`group relative rounded-3xl p-7 transition-all hover:-translate-y-1 ${
-                i % 3 === 0 ? 'bg-cyan-50 border border-cyan-200' :
-                i % 3 === 1 ? 'bg-navy-50 border border-navy-100' :
-                'bg-white border border-navy-100'
+              <div key={s.title} className={`group relative rounded-3xl p-8 transition-all hover:-translate-y-1 ${
+                i % 2 === 0 ? 'bg-cyan-50 border border-cyan-200' : 'bg-navy-50 border border-navy-100'
               }`}>
                 <div className="w-14 h-14 rounded-2xl bg-white border border-navy-100 flex items-center justify-center text-3xl">
                   {s.icon}
                 </div>
-                <h3 className="serif text-2xl text-navy-900 mt-5 font-semibold">{s.title}</h3>
-                <p className="text-ink-700 mt-3 text-sm leading-relaxed">{s.desc}</p>
+                <h3 className="serif text-2xl lg:text-3xl text-navy-900 mt-5 font-semibold">{s.title}</h3>
+                <p className="text-ink-700 mt-3 leading-relaxed">{s.desc}</p>
+                <ul className="mt-5 space-y-2">
+                  {s.bullets.map((b) => (
+                    <li key={b} className="flex items-start gap-2.5 text-sm text-ink-700">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#29A5DD" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="mt-0.5 shrink-0"><polyline points="20 6 9 17 4 12" /></svg>
+                      <span>{b}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
             ))}
           </div>
@@ -412,8 +436,7 @@ export default function Page() {
                   <select name="forma" className="w-full px-4 py-3 bg-navy-50 border border-navy-100 focus:border-cyan-500 rounded-xl outline-none transition">
                     <option>JDG — ryczałt</option>
                     <option>JDG — KPiR</option>
-                    <option>Spółka z o.o.</option>
-                    <option>Spółka cywilna</option>
+                    <option>JDG — skala / liniowy</option>
                     <option>Zatrudniam cudzoziemców</option>
                     <option>Dopiero zakładam</option>
                     <option>Inna / nie wiem</option>
@@ -465,7 +488,7 @@ export default function Page() {
               </div>
               <p className="text-sm text-navy-100 mt-5 leading-relaxed">
                 Usługi Biurowo-Księgowe Reg-Biur Regina Kierznikiewicz —
-                księgowość, kadry, rozliczenia podatkowe, zatrudnienie cudzoziemców.
+                KPiR, ryczałt, kadry, rozliczenia podatkowe, zatrudnienie cudzoziemców.
                 Wejherowo, od 2018.
               </p>
               <div className="mt-5 space-y-1 text-xs text-navy-200 font-mono">
@@ -476,11 +499,9 @@ export default function Page() {
             <div>
               <div className="text-xs uppercase tracking-[0.2em] text-cyan-400 font-semibold">Usługi</div>
               <ul className="mt-4 space-y-2 text-sm">
-                <li><a href="#uslugi" className="hover:text-cyan-400 transition">Prowadzenie księgowości</a></li>
+                <li><a href="#uslugi" className="hover:text-cyan-400 transition">Prowadzenie księgowości (KPiR, ryczałt)</a></li>
                 <li><a href="#uslugi" className="hover:text-cyan-400 transition">Kadry i płace</a></li>
-                <li><a href="#uslugi" className="hover:text-cyan-400 transition">Rozliczenia podatkowe</a></li>
-                <li><a href="#uslugi" className="hover:text-cyan-400 transition">ZUS, JPK, VAT</a></li>
-                <li><a href="#uslugi" className="hover:text-cyan-400 transition">Doradztwo podatkowe</a></li>
+                <li><a href="#uslugi" className="hover:text-cyan-400 transition">Rozliczenia podatkowe firm i indywidualne</a></li>
                 <li><a href="#uslugi" className="hover:text-cyan-400 transition">Rejestracja działalności</a></li>
                 <li><a href="#uslugi" className="hover:text-cyan-400 transition font-semibold">Zatrudnienie cudzoziemców</a></li>
               </ul>
