@@ -412,47 +412,68 @@ export default function Page() {
             </div>
 
             <div className="lg:col-span-7">
-              <form action="mailto:ubk@reg-biur.com.pl" method="post" encType="text/plain" className="bg-white border border-navy-100 rounded-3xl p-8 shadow-sm">
-                <div className="text-xs uppercase tracking-[0.2em] text-cyan-600 font-semibold">Formularz kontaktowy</div>
-                <h3 className="serif text-3xl text-navy-900 mt-2 font-semibold">Napisz do nas</h3>
-                <p className="text-sm text-ink-700 mt-2">Odpowiadamy najczęściej tego samego dnia roboczego.</p>
-
-                <div className="mt-7 grid sm:grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-xs uppercase tracking-widest text-ink-500 font-semibold mb-2">Imię i nazwisko</label>
-                    <input name="imie" required className="w-full px-4 py-3 bg-navy-50 border border-navy-100 focus:border-cyan-500 rounded-xl outline-none transition" placeholder="Jan Kowalski" />
-                  </div>
-                  <div>
-                    <label className="block text-xs uppercase tracking-widest text-ink-500 font-semibold mb-2">Telefon</label>
-                    <input name="telefon" type="tel" className="w-full px-4 py-3 bg-navy-50 border border-navy-100 focus:border-cyan-500 rounded-xl outline-none transition" placeholder="500 000 000" />
-                  </div>
-                </div>
-                <div className="mt-4">
-                  <label className="block text-xs uppercase tracking-widest text-ink-500 font-semibold mb-2">E-mail</label>
-                  <input name="email" type="email" required className="w-full px-4 py-3 bg-navy-50 border border-navy-100 focus:border-cyan-500 rounded-xl outline-none transition" placeholder="jan@firma.pl" />
-                </div>
-                <div className="mt-4">
-                  <label className="block text-xs uppercase tracking-widest text-ink-500 font-semibold mb-2">Forma prowadzenia</label>
-                  <select name="forma" className="w-full px-4 py-3 bg-navy-50 border border-navy-100 focus:border-cyan-500 rounded-xl outline-none transition">
-                    <option>JDG — ryczałt</option>
-                    <option>JDG — KPiR</option>
-                    <option>JDG — skala / liniowy</option>
-                    <option>Zatrudniam cudzoziemców</option>
-                    <option>Dopiero zakładam</option>
-                    <option>Inna / nie wiem</option>
-                  </select>
-                </div>
-                <div className="mt-4">
-                  <label className="block text-xs uppercase tracking-widest text-ink-500 font-semibold mb-2">Wiadomość</label>
-                  <textarea name="wiadomosc" rows={4} className="w-full px-4 py-3 bg-navy-50 border border-navy-100 focus:border-cyan-500 rounded-xl outline-none transition" placeholder="Krótko opisz, czego potrzebujesz — księgowość, kadry, rozliczenia, zatrudnianie cudzoziemców..."></textarea>
-                </div>
-                <button type="submit" className="mt-6 w-full px-6 py-4 bg-cyan-500 hover:bg-cyan-600 text-white font-medium transition rounded-full flex items-center justify-center gap-3 shadow-lg shadow-cyan-500/25">
-                  Wyślij wiadomość →
-                </button>
-                <p className="text-xs text-ink-500 mt-3 leading-relaxed">
-                  Wysyłając formularz wyrażasz zgodę na kontakt zwrotny. Twoje dane nie są przekazywane podmiotom trzecim.
+              <div className="bg-white border border-navy-100 rounded-3xl p-8 shadow-sm">
+                <div className="text-xs uppercase tracking-[0.2em] text-cyan-600 font-semibold">Jak zacząć współpracę</div>
+                <h3 className="serif text-3xl text-navy-900 mt-2 font-semibold">Trzy kroki — bez papierologii na start</h3>
+                <p className="text-sm text-ink-700 mt-2 leading-relaxed">
+                  Przekazanie księgowości nie wymaga skomplikowanej procedury. Wystarczy krótka rozmowa,
+                  żebyśmy poznali Twoją firmę.
                 </p>
-              </form>
+
+                <div className="mt-7 space-y-4">
+                  <div className="flex items-start gap-5 p-5 bg-cyan-50 border border-cyan-200 rounded-2xl">
+                    <div className="serif text-3xl font-semibold text-cyan-600 leading-none shrink-0 w-12">01</div>
+                    <div>
+                      <div className="serif text-xl text-navy-900 font-semibold">Zadzwoń lub napisz</div>
+                      <p className="text-sm text-ink-700 mt-1.5 leading-relaxed">
+                        Krótka, niezobowiązująca rozmowa. Wystarczy, że zarysujesz typ działalności
+                        i czego potrzebujesz — KPiR, ryczałt, kadry, zatrudnienie cudzoziemców.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-5 p-5 bg-navy-50 border border-navy-100 rounded-2xl">
+                    <div className="serif text-3xl font-semibold text-navy-800 leading-none shrink-0 w-12">02</div>
+                    <div>
+                      <div className="serif text-xl text-navy-900 font-semibold">Wycena i zakres usług</div>
+                      <p className="text-sm text-ink-700 mt-1.5 leading-relaxed">
+                        Po rozmowie przygotujemy bezpłatną wycenę i konkretny zakres usług dopasowany
+                        do Twojej firmy. Bez ukrytych kosztów i zaskoczeń.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-5 p-5 bg-white border border-navy-100 rounded-2xl">
+                    <div className="serif text-3xl font-semibold text-navy-900 leading-none shrink-0 w-12">03</div>
+                    <div>
+                      <div className="serif text-xl text-navy-900 font-semibold">Umowa i start</div>
+                      <p className="text-sm text-ink-700 mt-1.5 leading-relaxed">
+                        Podpisujemy umowę o prowadzenie księgowości i pełnomocnictwo do urzędu skarbowego.
+                        Możemy przejąć księgowość w trakcie roku — nie musisz czekać do stycznia.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="mt-7 relative bg-gradient-to-br from-navy-900 to-navy-800 rounded-2xl p-7 overflow-hidden">
+                  <div className="absolute -top-10 -right-10 w-40 h-40 bg-cyan-500/25 rounded-full blur-2xl" />
+                  <div className="relative">
+                    <div className="text-xs uppercase tracking-[0.2em] text-cyan-400 font-semibold">Najprościej — zadzwoń</div>
+                    <a href="tel:+48508189717" className="serif text-4xl lg:text-5xl font-semibold text-white hover:text-cyan-400 transition mt-2 inline-block">
+                      508 189 717
+                    </a>
+                    <div className="text-sm text-navy-100 mt-2">pn–pt 8:00–16:00 — odbieramy w godzinach pracy biura</div>
+                    <div className="mt-5 flex flex-wrap gap-3">
+                      <a href="tel:+48508189717" className="inline-flex items-center gap-2 px-5 py-3 bg-cyan-500 hover:bg-cyan-600 text-white font-medium rounded-full transition">
+                        Zadzwoń teraz →
+                      </a>
+                      <a href="mailto:ubk@reg-biur.com.pl" className="inline-flex items-center gap-2 px-5 py-3 bg-white/10 hover:bg-white/20 border border-white/30 text-white font-medium rounded-full transition">
+                        Napisz: ubk@reg-biur.com.pl
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
