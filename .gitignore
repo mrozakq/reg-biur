@@ -11,6 +11,9 @@
 dist/
 *.zip
 
+# lokalne dokumenty do przekazania (nie commitować — zawierają konkretne wartości DNS)
+DNS-INSTRUKCJE.md
+
 # misc
 .DS_Store
 *.pem

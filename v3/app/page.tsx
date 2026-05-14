@@ -71,7 +71,7 @@ export default function Page() {
       {/* Header */}
       <header className="sticky top-0 z-30 bg-white/95 backdrop-blur border-b border-navy-100">
         <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-          <a href="#" className="flex items-center gap-3">
+          <a href="/" className="flex items-center gap-3">
             <Logo className="w-12 h-12" frame="#15265E" bars="#29A5DD" />
             <div>
               <div className="text-[10px] tracking-[0.2em] uppercase text-ink-500 font-semibold">Usługi Biurowo-Księgowe</div>
@@ -540,7 +540,7 @@ export default function Page() {
           <div className="border-t border-navy-800 mt-10 pt-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs text-navy-200">
             <div>© 2018–2026 Usługi Biurowo-Księgowe Reg-Biur Regina Kierznikiewicz</div>
             <div className="flex items-center gap-4">
-              <a href="#" className="hover:text-white transition">Polityka prywatności</a>
+              <a href="/polityka-prywatnosci/" className="hover:text-white transition">Polityka prywatności</a>
               <span>reg-biur.com.pl</span>
             </div>
           </div>
