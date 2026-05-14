@@ -485,7 +485,7 @@ export default function Page() {
           <div className="aspect-[16/6] overflow-hidden rounded-3xl border border-navy-100">
             <iframe
               title="Mapa - Reg-Biur, ul. Stefczyka 67, Wejherowo"
-              src="https://www.openstreetmap.org/export/embed.html?bbox=18.22%2C54.59%2C18.27%2C54.61&layer=mapnik&marker=54.6011%2C18.2390"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=18.2719%2C54.6031%2C18.2819%2C54.6091&layer=mapnik&marker=54.6061%2C18.2769"
               width="100%"
               height="100%"
               style={{ border: 0 }}
@@ -543,6 +543,17 @@ export default function Page() {
               <a href="/polityka-prywatnosci/" className="hover:text-white transition">Polityka prywatności</a>
               <span>reg-biur.com.pl</span>
             </div>
+          </div>
+          <div className="mt-3 text-xs text-navy-200/80">
+            O niezawodne działanie dba emTeq —{' '}
+            <a
+              href="https://emteq.pl"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-cyan-400 hover:text-cyan-300 underline-offset-2 hover:underline transition"
+            >
+              obsługa informatyczna Wejherowo
+            </a>
           </div>
         </div>
       </footer>
