@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://reg-biur.com.pl/v3/sitemap.xml
+Sitemap: https://reg-biur.com.pl/sitemap.xml

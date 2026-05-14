@@ -3,29 +3,17 @@ frontend:
   phases:
     preBuild:
       commands:
-        - (cd index && npm ci)
-        - (cd v1 && npm ci)
-        - (cd v2 && npm ci)
         - (cd v3 && npm ci)
     build:
       commands:
-        - (cd index && npm run build)
-        - (cd v1 && npm run build)
-        - (cd v2 && npm run build)
         - (cd v3 && npm run build)
         - rm -rf dist
-        - mkdir -p dist/v1 dist/v2 dist/v3
-        - cp -r index/out/. dist/
-        - cp -r v1/out/. dist/v1/
-        - cp -r v2/out/. dist/v2/
-        - cp -r v3/out/. dist/v3/
+        - mkdir -p dist
+        - cp -r v3/out/. dist/
   artifacts:
     baseDirectory: dist
     files:
       - '**/*'
   cache:
     paths:
-      - index/node_modules/**/*
-      - v1/node_modules/**/*
-      - v2/node_modules/**/*
       - v3/node_modules/**/*
